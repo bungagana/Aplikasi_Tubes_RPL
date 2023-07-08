@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cerpen"
+    app:umanoDragView="@id/dragView"
+    app:umanoScrollableView="@id/ketentuan"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:background="#F1F0F0">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="175dp"
+               android:src="@drawable/cerpenimg"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/judulcerpen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Judul Cerpen" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="15dp"
+                android:elevation="5dp">
+            <EditText
+                android:id="@+id/kontencerpen"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:maxLines="100"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:scrollbars="vertical"
+                android:hint="Isi Cerpen"
+                />
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:onClick="kirimbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kirim"
+                android:layout_marginHorizontal="15dp"
+                android:elevation="5dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/profontbold"
+                android:textSize="17dp"
+                android:layout_gravity="center_horizontal"
+                android:background='@drawable/bgroundcrpn'
+                android:textColor="#fff"/>
+
+          <androidx.legacy.widget.Space
+              android:layout_width="match_parent"
+              android:layout_height="10dp"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/dragView"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:background="@color/putih"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:focusable="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ketentuan Cerpen"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/profontbold"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ketentuan"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Ketentuan Cerpen : \n 1. Judul cerpen minimal 10 huruf dan maksimal 50 huruf \n
+2. Konten atau isi cerpen tidak melebihi 10.000 huruf.
+\n 3. Cerpen yang telah diajukan akan diproses oleh Verifikator dan jika sudah disetujui maka poin akan masuk ke akun anda.
+\n 4. Proses Verifikasi berlangsung 2x24 jam"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

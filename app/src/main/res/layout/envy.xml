@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suasana"
+        android:textSize="25dp"
+        android:fontFamily="@font/profontbold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Warna"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/red"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/red"/>
+
+
+            <ImageView
+                android:id="@+id/orange"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/orange"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginLeft="6dp"/>
+
+            <ImageView
+                android:id="@+id/yellow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/yellow"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginLeft="6dp"/>
+
+            <ImageView
+                android:id="@+id/green"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/green"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginLeft="6dp"/>
+
+            <ImageView
+                android:id="@+id/emerald"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/emerald"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginLeft="6dp"/>
+
+            <ImageView
+                android:id="@+id/blue"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/blue"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginLeft="6dp"/>
+
+            <ImageView
+                android:id="@+id/purple"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/purple"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginLeft="6dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Virtual Reality Scene"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/forest"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/forest"/>
+
+
+            <ImageView
+                android:id="@+id/beach"
+                android:layout_width="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="70dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/beach"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/mountain"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/mountain"/>
+
+
+            <ImageView
+                android:id="@+id/village"
+                android:layout_width="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="70dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/village"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Simpan"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bground"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/profontbold"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textSize="17dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

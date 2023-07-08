@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Eliterasi</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_file">id.sch.sman1pangkah.sptos.mazan.preference_file</string>
+    <string name="pref_login_status">id.sch.sman1pangkah.sptos.mazan.preference_login_status</string>
+    <string name="pref_user_name">id.sch.sman1pangkah.sptos.mazan.preference_user_name</string>
+    <string name="pref_email">id.sch.sman1pangkah.sptos.mazan.preference_email</string>
+    <string name="pref_class">id.sch.sman1pangkah.sptos.mazan.preference_class</string>
+    <string name="pref_school">id.sch.sman1pangkah.sptos.mazan.preference_school</string>
+    <string name="pref_level">id.sch.sman1pangkah.sptos.mazan.preference_level</string>
+    <string name="pref_exp">id.sch.sman1pangkah.sptos.mazan.preference_exp</string>
+    <string name="pref_poin">id.sch.sman1pangkah.sptos.mazan.preference_poin</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

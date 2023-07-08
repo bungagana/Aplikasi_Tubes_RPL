@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A152E"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nestedscrool">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+           >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/menubtn"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/moon"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beranda"
+                android:textSize="30dp"
+                android:textColor="@color/putih"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical|end"
+                android:fontFamily="@font/profontbold"
+
+                />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/namaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resma Adi Nugroho"
+                android:textColor="@color/putih"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/profontreg"
+                android:layout_marginLeft="22dp"
+                android:textSize="15dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:elevation="7dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardElevation="7dp"
+                app:cardBackgroundColor="#505677"
+                >
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="-20dp"
+                    android:src="@drawable/brain"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selamat Datang"
+                    android:fontFamily="@font/profontreg"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/profontreg"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="Temukan berbagai hal menarik di Eliterasi. Mulailah untuk menjelajahi."/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                android:layout_marginTop="30dp">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="15dp"
+                  android:padding="10dp"
+                  >
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:padding="10dp"
+                      android:layout_gravity="center_horizontal"
+                      >
+                      <androidx.cardview.widget.CardView
+                          android:id="@+id/disability"
+                          android:layout_width="130dp"
+                          android:layout_height="130dp"
+                          android:clickable="true"
+                          android:focusable="true"
+                          android:layout_marginRight="20dp"
+                          android:foreground="?android:attr/selectableItemBackground">
+                          <LinearLayout
+                              android:layout_gravity="center"
+                              android:orientation="vertical"
+                              android:layout_marginHorizontal="10dp"
+                              android:layout_marginVertical="10dp"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                              <ImageView
+                                  android:layout_width="50dp"
+                                  android:layout_height="50dp"
+                                  android:layout_gravity="center"
+                                  android:src="@drawable/bersahabat"/>
+
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="15dp"
+                                  android:gravity="center_horizontal"
+                                  android:fontFamily="@font/profontbold"
+                                  android:text="Mode Bersahabat"
+                                  />
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="10dp"
+                                  android:gravity="center_horizontal"
+                                  android:fontFamily="@font/profontreg"
+                                  android:text="masuki mode mudah dan nyaman "
+                                  />
+
+                          </LinearLayout>
+
+                      </androidx.cardview.widget.CardView>
+
+                      <androidx.cardview.widget.CardView
+                          android:id="@+id/discovbtn"
+                          android:layout_width="130dp"
+                          android:layout_height="130dp"
+                          android:clickable="true"
+                          android:focusable="true"
+                          android:layout_marginLeft="15dp"
+                          android:foreground="?android:attr/selectableItemBackground">
+
+                          <LinearLayout
+                              android:layout_gravity="center"
+                              android:orientation="vertical"
+                              android:layout_marginHorizontal="10dp"
+                              android:layout_marginVertical="10dp"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                              <ImageView
+                                  android:layout_width="50dp"
+                                  android:layout_height="65dp"
+                                  android:layout_gravity="center"
+                                  android:src="@drawable/looking"/>
+
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="15dp"
+                                  android:gravity="center_horizontal"
+                                  android:fontFamily="@font/profontbold"
+                                  android:text="Jelajah"
+                                  />
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="10dp"
+                                  android:gravity="center_horizontal"
+                                  android:fontFamily="@font/profontreg"
+                                  android:text="jelajahi karya sastra "
+                                  />
+
+                          </LinearLayout>
+
+                      </androidx.cardview.widget.CardView>
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+
+                      android:padding="10dp"
+                      android:layout_gravity="center_horizontal"
+                      >
+                      <androidx.cardview.widget.CardView
+                          android:id="@+id/challbtn"
+                          android:layout_width="130dp"
+                          android:layout_height="130dp"
+                          android:clickable="true"
+                          android:focusable="true"
+                          android:layout_marginRight="20dp"
+                          android:foreground="?android:attr/selectableItemBackground">
+                          <LinearLayout
+                              android:layout_gravity="center"
+                              android:orientation="vertical"
+                              android:layout_marginHorizontal="10dp"
+                              android:layout_marginVertical="10dp"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                              <ImageView
+                                  android:layout_width="46dp"
+                                  android:layout_height="45dp"
+                                  android:layout_gravity="center"
+                                  android:src="@drawable/game" />
+
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="15dp"
+                                  android:gravity="center_horizontal"
+                                  android:fontFamily="@font/profontbold"
+                                  android:text="Form"
+                                  />
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="10dp"
+                                  android:gravity="center_horizontal"
+                                  android:fontFamily="@font/profontreg"
+                                  android:text="Akses pembuatn Form Pengumpulan"
+                                  />
+
+                          </LinearLayout>
+
+                      </androidx.cardview.widget.CardView>
+
+                      <androidx.cardview.widget.CardView
+                          android:id="@+id/artikselbtn"
+                          android:layout_width="130dp"
+                          android:layout_height="130dp"
+                          android:clickable="true"
+                          android:focusable="true"
+                          android:layout_marginLeft="15dp"
+                          android:foreground="?android:attr/selectableItemBackground">
+
+                          <LinearLayout
+                              android:layout_gravity="center"
+                              android:orientation="vertical"
+                              android:layout_marginHorizontal="10dp"
+                              android:layout_marginVertical="10dp"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                              <ImageView
+                                  android:layout_width="65dp"
+                                  android:layout_height="65dp"
+                                  android:layout_gravity="center"
+                                  android:src="@drawable/score"/>
+
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="20dp"
+                                  android:gravity="center_horizontal"
+                                  android:fontFamily="@font/profontbold"
+                                  android:text="Nilai"
+                                  />
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="10dp"
+                                  android:gravity="center_horizontal"
+                                  android:fontFamily="@font/profontreg"
+                                  android:text="Kolom penilaian"
+                                  />
+
+                          </LinearLayout>
+
+                      </androidx.cardview.widget.CardView>
+
+                  </LinearLayout>
+
+              </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

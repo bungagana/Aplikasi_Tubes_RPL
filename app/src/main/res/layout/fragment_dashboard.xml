@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="25dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:id="@+id/menubtn"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/list"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktivitas"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/profontbold"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/namaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih salah satu jenis karya yang ingin dibuat"
+        android:fontFamily="@font/profontreg"
+        android:layout_marginLeft="22dp"
+        android:textSize="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            >
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp">
+
+
+                    <ImageView
+                        android:layout_marginStart="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:elevation="5dp"
+                        android:src="@drawable/artblue"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/artikelbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="60dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="90dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Artikel"
+                            android:fontFamily="@font/profontbold"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="Buat artikel menarik dan inspiratif yang dapat bermanfaat bagi pembaca."
+                            android:layout_marginEnd="5dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </FrameLayout>
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp">
+
+
+                <ImageView
+                    android:layout_marginStart="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:elevation="5dp"
+                    android:src="@drawable/folktale"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/umumbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="60dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="25dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginLeft="60dp"
+                   >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="90dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cerpen"
+                            android:fontFamily="@font/profontbold"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content"
+                            android:text="Imajinasikan cerita milikmu dan tuangkan dalam bentuk Cerpen dengan berbagai unsur pendukung"
+                            android:layout_marginEnd="5dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </FrameLayout>
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp">
+
+
+                <ImageView
+                    android:layout_marginStart="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:elevation="5dp"
+                    android:src="@drawable/roman"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/puisibtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="60dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="25dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginLeft="60dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="90dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Puisi"
+                            android:fontFamily="@font/profontbold"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="Ciptakan mahakarya puisi yang dapat mendayu hari dan pikiran para pembaca"
+                            android:layout_marginEnd="5dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_marginStart="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:elevation="5dp"
+                    android:src="@drawable/creavy"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/creavyBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="60dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="25dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginLeft="60dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="90dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Creavy (beta)"
+                            android:fontFamily="@font/profontbold"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="Tuangkan imajinasimu melalui cerita yang seru dan menarik"
+                            android:layout_marginEnd="5dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

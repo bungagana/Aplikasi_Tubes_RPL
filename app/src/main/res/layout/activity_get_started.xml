@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetStarted"
+    android:id="@+id/layoutStart"
+    android:background="#F8F8F7">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Membaca Jadi Lebih Seru"
+                android:textSize="35dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/profontbold"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/gambar"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/readimg"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardbg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="-20dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/judul2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Literasi"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="23dp"
+                        android:fontFamily="@font/profontbold"
+                        android:gravity="center_horizontal" />
+
+                    <View
+                        android:id="@+id/viewgm"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="#BABABA"/>
+
+
+                    <TextView
+                        android:id="@+id/deskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Membaca menjadi lebih seru dan menyenangkan melalui aplikasi Eliterasi. Temukan karya dari berbagai pengguna yang menarik untuk dibaca. Serta jelajahi fitur menarik lainnya di Eliterasi."
+                        android:textSize="14dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/profontreg"
+                        android:gravity="center_horizontal" />
+
+                    <Button
+                        android:id="@+id/btnnext"
+                        android:onClick="nextreg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:background="@drawable/bgsolid"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/profontbold"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:elevation="5dp"
+                        android:layout_marginHorizontal="40dp"
+                        />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliterasi 2021 : Copyrights RADIN Studio"
+                android:textSize="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/profontreg"
+                android:gravity="center_horizontal|bottom" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

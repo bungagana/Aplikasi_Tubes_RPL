@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/prof">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_gravity="bottom">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="-20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/account" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/namauser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/profontbold"
+                    android:text="Resma Adi Nugroho"
+                    android:textSize="25dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/gradebg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bggraden" />
+
+                    <TextView
+                        android:id="@+id/gradetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/profontbold"
+                        android:gravity="center_vertical"
+                        android:text="N"
+                        android:textColor="#fff"
+                        android:textSize="15dp" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progreslevel"
+                style="@style/ProgressBarPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:elevation="3dp"
+                android:max="100"
+                android:progress="75" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/levelid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/profontreg"
+                    android:text="Level 1"
+                    android:textColor="#3F51B5" />
+
+                <TextView
+                    android:id="@+id/titleid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/profontreg"
+                    android:text="Novice Writter"
+                    android:textColor="#3F51B5" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/biouser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:text="Semakin banyak menulis semakin banyak pula mendapatkan yang. Heheheh"
+                android:textAlignment="center" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ecoinBtn"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bground3" />
+
+                <TextView
+                    android:id="@+id/poinuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/profontbold"
+                    android:gravity="center_vertical"
+                    android:text="Poin : 0"
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/kluarbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bground"
+                android:fontFamily="@font/profontbold"
+                android:text="Sign OUt"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
